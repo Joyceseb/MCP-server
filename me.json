@@ -1,0 +1,39 @@
+{
+  "ide": {
+    "hasSeenNudge": true
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "general": {
+    "sessionRetention": {
+      "enabled": true,
+      "maxAge": "30d",
+      "warningAcknowledged": true
+    }
+  },
+  "mcpServers": {
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\joyce\\OneDrive\\Bureau"
+      ]
+    },
+    "academic-research-assistant": {
+      "command": "C:\\Agentic_MCP_Elective\\mcp-arxiv-assistant\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Agentic_MCP_Elective\\mcp-arxiv-assistant\\server.py"
+      ]
+    }
+  }
+}
+
+Search 3 papers about RLHF in cs.AI, then fetch details for the first one and compare the first two
