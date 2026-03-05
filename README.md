@@ -23,7 +23,9 @@ _____________________________________________________________________
 
 |--> Works with *Gemini CLI* (can be tested with MCP Inspector)
 
-# Grounding benefit (why MCP matters): The model stops guessing citations. Instead, it uses tool outputs (real arXiv IDs + PDFs), which reduces hallucinations and improves accuracy.
+# Grounding benefit (why MCP matters): 
+
+The model stops guessing citations. Instead, it uses tool outputs (real arXiv IDs + PDFs), which reduces hallucinations and improves accuracy.
 
 ## Project Structure 
 
