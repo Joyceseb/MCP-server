@@ -13,13 +13,17 @@ This project consists on building an MCP Server acting like an academic research
 --> MCP Resource : arxiv:/search-history
 _____________________________________________________________________
 
-|--> Error Handling + input validation 
+## Robustness features:
 
-|--> Rate limiting (polite API usage)
+|--> Error Handling + input validation (returns JSON error messages instead of crashing + arXiv ID format, max_results bounds)
+
+|--> Rate limiting (polite API usage by reducing repeated and unnecessary calls)
 
 |--> In-memory cache for faster repeated calls 
 
 |--> Works with *Gemini CLI* (can be tested with MCP Inspector)
+
+# Grounding benefit (why MCP matters): The model stops guessing citations. Instead, it uses tool outputs (real arXiv IDs + PDFs), which reduces hallucinations and improves accuracy.
 
 ## Project Structure 
 
@@ -31,11 +35,7 @@ _____________________________________________________________________
 
 └─ README.md
 
-# Tools description 
-
 ## TOOLS DESCRIPTION
-
-## TOOLS DESCRIPTION (compact)
 
 | Tool / Resource | Type | Inputs | Output (summary) | Purpose |
 |---|---|---|---|---|
